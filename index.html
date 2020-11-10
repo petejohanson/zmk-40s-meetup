@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>40s Meetup - ZMK</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -16,8 +16,72 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>ZMK</h1>
+				</section>
+				<section>
+					<section>
+						<img src="img/but-why.gif"/>
+					</section>
+					<section>
+						<h2>Why Not?!</h2>
+					</section>
+					<section>
+						I want a travel mechanical keyboard, and not to deal with wires.
+					</section>
+					<section>
+						<h2>QMK?</h2>
+						<h3 class="fragment">I ❤ QMK!</h3>
+					</section>
+					<section>
+						<h2>The Problem</h2>
+						<ul>
+							<li>QMK is GPL Licensed</li>
+							<li class="fragment">Bluetooth stacks are predominantly licensed <em>incompatibly</em>.</li>
+							<li class="fragment">QMK not designed up front with power efficiency in mind.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>What is ZMK?</h2>
+						<p class="fragment">A wireless first keyboard firmware with a focus on features, ease of use, and power efficiency</p>
+					</section>
+					<section>
+						<h3>Hardware</h3>
+						<ul>
+							<li>"Anything" Zephyr RTOS Supports</li>
+							<li class="fragment">nRF52</li>
+							<li class="fragment">STM32!
+								<ul>
+									<li>Proton-C*</li>
+									<li>Planck</li>
+									<li>stm32f303/stm32f072</li>
+									<li>stm32wb?</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					Design Goals
+					* User Local Stuff Not In Tree
+					* Eventual runtime keymaps (VIA)
+					* 
+				</section>
+				<section>
+					Features
+				</section>
+				<section>
+					<section>
+						<h2>User Config Repos</h2>
+					</section>
+					<section>
+						<ul>
+							<li><em>Not</em> a fork of ZMK</li>
+							<li>Includes user keymaps and/or keyboard shields themselves</li>
+					</section>
+				</section>
 			</div>
 		</div>
 
