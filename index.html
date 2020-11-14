@@ -64,13 +64,41 @@
 					</section>
 				</section>
 				<section>
-					Design Goals
-					* User Local Stuff Not In Tree
-					* Eventual runtime keymaps (VIA)
-					* 
+					<h2>Design Goals</h2>
+					<ul>
+						<li>Core Firmware</li>
+						<li>"Popular" keyboards in-tree, with stock keymaps</li>
+						<li>User keymaps, prototypes, handwires easily out-of-tree</li>
+						<li>Runtime keymaps as end goal</li>
+						<li>Powerful out of the box, but with wide customization</li>
+					</ul>
 				</section>
 				<section>
-					Features
+					<section>
+
+						<h2>Features</h2>
+					</section>
+					<section>
+						<h3>Core</h3>
+						<ul>
+							<li>BLE</li>
+							<li>Wireless Split</li>
+							<li>Keymaps/layers</li>
+							<li>Encoders*</li>
+							<li>RGB*</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Keymaps</h3>
+						<ul>
+							<li>Shifted codes</li>
+							<li class="fragment">Hold-Tap (mod-tap, layer-tap, hold-shift)</li>
+							<li class="fragment">Momentary Layer</li>
+							<li class="fragment">BLE management (profile switching, bond clearing)</li>
+							<li class="fragment">Output selection (USB vs BLE when both connected)</li>
+							<li class="fragment">External Power (cut power to RGB/OLED to save power)</li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -79,7 +107,13 @@
 					<section>
 						<ul>
 							<li><em>Not</em> a fork of ZMK</li>
-							<li>Includes user keymaps and/or keyboard shields themselves</li>
+							<li class="fragment">Include user keymaps and/or keyboard shields themselves</li>
+							<li class="fragment">GitHub Actions build firmware for you</li>
+							<li class="fragment"><em>No</em> local development/toolchain setup</li>
+							<li class="fragment">GitHub Web UI to edit keymaps!</li>
+					</section>
+					<section>
+						<h3>Demo!</h3>
 					</section>
 				</section>
 			</div>
