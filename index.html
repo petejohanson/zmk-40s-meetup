@@ -41,6 +41,15 @@
 							<li class="fragment">QMK not designed up front with power efficiency in mind.</li>
 						</ul>
 					</section>
+					<section>
+						<h3>QMK "Nordic Forks" Licensing</h3>
+						<ul>
+							<li>GPL is "viral"</li>
+							<li>No further restrictions can be added</li>
+							<li>Nordic SDK 5-clause adds restrictions on distribution</li>
+							<li>Ergo, you are in violation of GPL if you release QMK binaries integrating Nordic SDK</li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -150,12 +159,47 @@
 						<img src="img/current-zmk.jpg">
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<h2>Designing For Wireless Future</h2>
+					</section>
+					<section>
+						<h3>Power</h3>
+						<ul>
+							<li>Check Quiescent Current</li>
+							<li class="fragment">Interrupt Driven; Polling Kills</li>
+							<li class="fragment">MOSFETs to cut power</li>
+							<li class="fragment">EPD aka E-Ink</li>
+						</ul>
+					</section>
+					<section>
+						<h3>BT Modules</h3>
+						<img src="img/raytac-module.jpg">
+					</section>
+					<section>
+						<ul>
+							<li>IC + Antenna</li>
+							<li class="fragment">FCC Certification</li>
+							<li class="fragment">Various sizes, sets of pins exposed</li>
+							<li class="fragment">Hard without PCBA!</li>
+							<li class="fragment">Beware Keep Out Areas</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Materials</h3>
+						<ul>
+							<li>Don't encase your keeb in a giant faraday cage!</li>
+							<li class="fragment">Acrylic, PC, Etc. Good</li>
+							<li class="fragment">Aluminum Bad</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
 			// More info about initialization & config:
@@ -165,7 +209,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
